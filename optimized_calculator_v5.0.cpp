@@ -237,7 +237,7 @@ void doSin() {
     cin >> angle;
     double radians = angle * PI / 180.0;  
     double result = sin(radians);
-    cout << "sin(" << angle << "¡ã) = " << result << endl;
+    cout << "sin(" << angle << "Â¡Ã£) = " << result << endl;
     processResultMemory(result);
 }
 
@@ -250,7 +250,7 @@ void doCos() {
     cin >> angle;
     double radians = angle * PI / 180.0;  
     double result = cos(radians);
-    cout << "cos(" << angle << "¡ã) = " << result << endl;
+    cout << "cos(" << angle << "Â¡Ã£) = " << result << endl;
     processResultMemory(result);
 }
 
@@ -264,12 +264,12 @@ void doTan() {
     double radians = angle * PI / 180.0; 
      
     if (fmod(fabs(angle + 90), 180.0) < 1e-9) {
-        cout << "Error: Tangent is undefined for angle " << angle << "¡ã." << endl;
+        cout << "Error: Tangent is undefined for angle " << angle << "Â¡Ã£." << endl;
         processResultMemory(0);
         return;
     }
     double result = tan(radians);
-    cout << "tan(" << angle << "¡ã) = " << result << endl;
+    cout << "tan(" << angle << "Â¡Ã£) = " << result << endl;
     processResultMemory(result);
 }
 
@@ -455,4 +455,5 @@ int main() {
     }
     return 0;
 }
+
 
